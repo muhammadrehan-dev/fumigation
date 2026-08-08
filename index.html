@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classic Fumigation</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/Logo.png">
+    <link rel="apple-touch-icon" href="images/logo/Logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#B71C1C',
+                        brandRedLight: '#D32F2F',
+                    },
+                    animation: {
+                        'smooth-fade': 'fadeIn 0.6s ease-out forwards',
+                        'smooth-slide': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+            Navbar Start
+    ========================== -->
+
+    <nav class="navbar navbar-expand-xl fixed-top custom-navbar">
+
+        <div class="container-xxl">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+
+                <div class="logo-circle">
+
+                    <img src="images/logo/logo.png"
+                        alt="Classic Fumigation Logo"
+                        class="logo-img">
+
+                </div>
+
+                <div class="logo-text ms-3">
+
+                    <h4>Classic Fumigation</h4>
+
+                    <span>Eco-Friendly Pest Control</span>
+
+                </div>
+
+            </a>
+
+
+            <!-- Mobile Toggle -->
+
+            <button class="navbar-toggler border-0 shadow-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+
+                <span class="hamburger"></span>
+
+            </button>
+
+
+
+            <!-- Desktop Menu -->
+
+            <div class="collapse navbar-collapse justify-content-center">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why">Why Choose Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Working Process</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Right Side -->
+
+            <div class="navbar-right d-none d-xl-flex align-items-center">
+
+                <a href="#contact" class="nav-icon">
+
+                    <i class="bi bi-search"></i>
+
+                </a>
+
+                <a href="tel:+923152934276" class="nav-icon">
+
+                    <i class="bi bi-telephone-fill"></i>
+
+                </a>
+
+                <a href="https://wa.me/923152934276"
+                    target="_blank"
+                    class="nav-icon">
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </a>
+
+                <a href="#contact" class="quote-btn">
+
+                    Get Free Inspection
+
+                    <i class="bi bi-arrow-right-short"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+          Mobile Offcanvas
+    ========================== -->
+
+    <div class="offcanvas offcanvas-end custom-offcanvas"
+        tabindex="-1"
+        id="mobileMenu">
+
+        <div class="offcanvas-header">
+
+            <div class="mobile-logo">
+
+                <img src="images/logo/logo.png"
+                    alt="Logo">
+
+                <div>
+
+                    <h5>Classic Fumigation</h5>
+
+                    <small>Eco-Friendly Pest Control</small>
+
+                </div>
+
+            </div>
+
+            <button type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"></button>
+
+        </div>
+
+
+
+        <div class="offcanvas-body">
+
+            <ul class="mobile-nav">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#why">Why Choose Us</a></li>
+
+                <li><a href="#gallery">Projects</a></li>
+
+                <li><a href="#process">Working Process</a></li>
+
+                <li><a href="#testimonial">Testimonial</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+
+
+            <div class="mobile-icons">
+
+                <a href="#contact"><i class="bi bi-search"></i></a>
+
+                <a href="tel:+923152934276">
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+
+                <a href="https://wa.me/923152934276" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+            </div>
+
+
+
+            <a href="#contact" class="mobile-btn">
+
+                Get Free Inspection
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- =========================================
+            HERO SECTION START
+========================================== -->
+
+<section class="hero-section" id="home">
+
+    <!-- Background Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Floating Leaves -->
+    <img src="images/hero/leaf-1.png" class="leaf leaf-1" alt="">
+    <img src="images/hero/leaf-2.png" class="leaf leaf-2" alt="">
+    <img src="images/hero/leaf-1.png" class="leaf leaf-3" alt="">
+    <img src="images/hero/leaf-2.png" class="leaf leaf-4" alt="">
+
+    <!-- Floating Particles -->
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
+    <span class="particle p5"></span>
+
+    <div class="container-xxl">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- =========================================
+                    LEFT IMAGE
+            ========================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="hero-image-wrapper">
+
+                    <!-- Main Image -->
+
+                    <img src="images/hero/fumigation technician.png"
+                        class="hero-main-img img-fluid"
+                        alt="Classic Fumigation">
+
+                    <!-- Circle Logo -->
+
+                    <div class="hero-logo">
+
+                        <img src="images/logo/logo.png"
+                            alt="Logo">
+
+                    </div>
+
+                    <!-- Floating Badge -->
+
+                    <div class="experience-card">
+
+                        <h3>10+</h3>
+
+                        <span>Years Experience</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                    RIGHT CONTENT
+            ========================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="hero-content">
+
+                    <span class="hero-subtitle">
+
+                        Welcome To Classic Fumigation
+
+                    </span>
+
+                    <h1>
+
+                        Professional
+                        <span>Pest Control</span>
+                        Experts
+
+                    </h1>
+
+                    <p>
+
+                        We provide safe, eco-friendly and highly effective pest
+                        control services for homes, offices, restaurants,
+                        hospitals and industries using modern fumigation
+                        techniques.
+
+                    </p>
+
+                    <!-- Buttons -->
+
+                    <div class="hero-buttons">
+
+                        <a href="#contact" class="btn-primary-custom">
+
+                            Book Inspection
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                        <a href="#services" class="btn-outline-custom">
+
+                            Explore Services
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Statistics -->
+
+                    <div class="hero-stats">
+
+                        <div class="stat-box">
+
+                            <h2 class="counter"
+                                data-target="10">0</h2>
+
+                            <p>Years Experience</p>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h2 class="counter"
+                                data-target="5000">0</h2>
+
+                            <p>Happy Clients</p>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h2>
+
+                                24/7
+
+                            </h2>
+
+                            <p>Emergency</p>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h2>
+
+                                100%
+
+                            </h2>
+
+                            <p>Certified Experts</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+            HERO SECTION END
+========================================== -->
+
+<!-- ==========================================
+        ABOUT SECTION START
+=========================================== -->
+
+<section class="about-section py-5" id="about">
+
+    <div class="container-xxl py-4">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- ================= LEFT IMAGE ================= -->
+
+            <div class="col-lg-6">
+
+                <div class="about-image-box">
+
+                    <img src="images/About/fumigation technician.jpg"
+                        class="img-fluid about-image"
+                        alt="Classic Fumigation Technician">
+
+                    <!-- Experience Badge -->
+
+                    <div class="experience-badge">
+
+                        <h2>10+</h2>
+
+                        <span>Years Experience</span>
+
+                    </div>
+
+                    <!-- Logo -->
+
+                    <div class="about-logo-box">
+
+                        <img src="images/logo/Logo.png"
+                            alt="Classic Fumigation">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= RIGHT CONTENT ================= -->
+
+            <div class="col-lg-6">
+
+                <div class="about-content">
+
+                    <span class="about-subtitle">
+
+                        ABOUT CLASSIC FUMIGATION
+
+                    </span>
+
+                    <h2>
+
+                        Protecting Homes &
+                        Businesses With
+                        <span>Eco-Friendly Pest Control</span>
+
+                    </h2>
+
+                    <p>
+
+                        Classic Fumigation provides professional pest
+                        control services for homes, offices, restaurants,
+                        industries and commercial buildings using safe,
+                        eco-friendly and government-approved solutions.
+
+                    </p>
+
+                    <!-- Mission & Vision Cards -->
+
+                    <div class="about-cards-wrapper">
+
+                        <div class="about-card">
+
+                            <div class="about-card-icon">
+
+                                <i class="bi bi-bullseye"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>Our Mission</h5>
+
+                                <p>
+
+                                    Deliver safe, affordable and long-lasting
+                                    pest control services with complete
+                                    customer satisfaction.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="about-card">
+
+                            <div class="about-card-icon">
+
+                                <i class="bi bi-eye-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>Our Vision</h5>
+
+                                <p>
+
+                                    Become Pakistan's most trusted pest
+                                    control company through innovation,
+                                    quality and reliability.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Features Grid -->
+
+                    <div class="about-features">
+
+                        <div class="feature-box">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <span>Certified Experts</span>
+
+                        </div>
+
+                        <div class="feature-box">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <span>Eco-Friendly Chemicals</span>
+
+                        </div>
+
+                        <div class="feature-box">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <span>Fast Emergency Service</span>
+
+                        </div>
+
+                        <div class="feature-box">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <span>Affordable Pricing</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="about-buttons">
+
+                        <a href="#services" class="about-btn">
+
+                            Explore Services
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                        <a href="#contact" class="about-btn-outline">
+
+                            Contact Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= COUNTERS ================= -->
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-lg-3 col-6">
+
+                <div class="about-counter-card">
+
+                    <h2 class="counter" data-target="5000">0</h2>
+
+                    <p>Happy Clients</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-6">
+
+                <div class="about-counter-card">
+
+                    <h2 class="counter" data-target="10">0</h2>
+
+                    <p>Years Experience</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-6">
+
+                <div class="about-counter-card">
+
+                    <h2 class="counter" data-target="98">0</h2>
+
+                    <p>Success Rate (%)</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-6">
+
+                <div class="about-counter-card">
+
+                    <h2 class="counter" data-target="24">0</h2>
+
+                    <p>24/7 Support</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        ABOUT SECTION END
+=========================================== -->
+
+
+
+        <!-- ==========================================================
+                    SERVICES SECTION START
+=========================================================== -->
+
+<section class="services-section py-5" id="services">
+
+    <div class="container-fluid px-0">
+
+        <!-- =======================
+            SECTION HEADING
+        ======================== -->
+
+        <div class="services-heading text-center container-xxl">
+
+            <span class="section-badge">
+                OUR SERVICES
+            </span>
+
+            <h2 class="mt-4">
+                Professional
+                <span>Pest Control</span>
+                Services
+            </h2>
+
+            <p>
+                Classic Fumigation provides eco-friendly pest control solutions
+                for homes, offices and commercial properties. We use safe,
+                effective and modern treatment methods to keep your family
+                protected from harmful pests.
+            </p>
+
+        </div>
+
+        <!-- =======================
+            SERVICES MARQUEE ROW 1 (RTL)
+        ======================== -->
+
+        <div class="services-marquee-wrapper mb-4">
+
+            <div class="services-marquee-track-rtl">
+
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Cockroach Control.jpg" alt="Cockroach Control"></div>
+                    <div class="service-icon"><i class="bi bi-bug-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Cockroach Control</h4>
+                        <p>Effective treatment for complete cockroach removal and long-lasting protection.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Termite Control.jpg" alt="Termite Control"></div>
+                    <div class="service-icon"><i class="bi bi-house-check-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Termite Control</h4>
+                        <p>Professional anti-termite treatment to protect your property from hidden damage.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Bed Bug Control.jpg" alt="Bed Bug Control"></div>
+                    <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+                    <div class="service-content">
+                        <h4>Bed Bug Control</h4>
+                        <p>Safe and reliable bed bug elimination using modern fumigation techniques.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Mosquito Control.jpg" alt="Mosquito Control"></div>
+                    <div class="service-icon"><i class="bi bi-cloud-drizzle-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Mosquito Control</h4>
+                        <p>Eco-friendly mosquito treatment for healthier indoor and outdoor environments.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- DUPLICATES FOR SEAMLESS LOOP -->
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Cockroach Control.jpg" alt="Cockroach Control"></div>
+                    <div class="service-icon"><i class="bi bi-bug-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Cockroach Control</h4>
+                        <p>Effective treatment for complete cockroach removal and long-lasting protection.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Termite Control.jpg" alt="Termite Control"></div>
+                    <div class="service-icon"><i class="bi bi-house-check-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Termite Control</h4>
+                        <p>Professional anti-termite treatment to protect your property from hidden damage.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Bed Bug Control.jpg" alt="Bed Bug Control"></div>
+                    <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+                    <div class="service-content">
+                        <h4>Bed Bug Control</h4>
+                        <p>Safe and reliable bed bug elimination using modern fumigation techniques.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Mosquito Control.jpg" alt="Mosquito Control"></div>
+                    <div class="service-icon"><i class="bi bi-cloud-drizzle-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Mosquito Control</h4>
+                        <p>Eco-friendly mosquito treatment for healthier indoor and outdoor environments.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =======================
+            SERVICES MARQUEE ROW 2 (LTR)
+        ======================== -->
+
+        <div class="services-marquee-wrapper">
+
+            <div class="services-marquee-track-ltr">
+
+                <!-- Card 5 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Rodent Control.jpg" alt="Rodent Control"></div>
+                    <div class="service-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Rodent Control</h4>
+                        <p>Fast rodent removal solutions to keep your property clean and hygienic.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Snake Control.jpg" alt="Snake Control"></div>
+                    <div class="service-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Snake Control</h4>
+                        <p>Safe snake capture and removal services by experienced pest control professionals.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Lizard Control.jpg" alt="Lizard Control"></div>
+                    <div class="service-icon"><i class="bi bi-stars"></i></div>
+                    <div class="service-content">
+                        <h4>Lizard Control</h4>
+                        <p>Complete lizard control using safe and modern pest management solutions.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Tank Cleaning.jpg" alt="Tank Cleaning"></div>
+                    <div class="service-icon"><i class="bi bi-droplet-half"></i></div>
+                    <div class="service-content">
+                        <h4>Tank Cleaning</h4>
+                        <p>Professional water tank cleaning services for safe, hygienic and healthy water storage.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- DUPLICATES FOR SEAMLESS LOOP -->
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Rodent Control.jpg" alt="Rodent Control"></div>
+                    <div class="service-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Rodent Control</h4>
+                        <p>Fast rodent removal solutions to keep your property clean and hygienic.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Snake Control.jpg" alt="Snake Control"></div>
+                    <div class="service-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
+                    <div class="service-content">
+                        <h4>Snake Control</h4>
+                        <p>Safe snake capture and removal services by experienced pest control professionals.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Lizard Control.jpg" alt="Lizard Control"></div>
+                    <div class="service-icon"><i class="bi bi-stars"></i></div>
+                    <div class="service-content">
+                        <h4>Lizard Control</h4>
+                        <p>Complete lizard control using safe and modern pest management solutions.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image"><img src="images/services/Tank Cleaning.jpg" alt="Tank Cleaning"></div>
+                    <div class="service-icon"><i class="bi bi-droplet-half"></i></div>
+                    <div class="service-content">
+                        <h4>Tank Cleaning</h4>
+                        <p>Professional water tank cleaning services for safe, hygienic and healthy water storage.</p>
+                        <a href="#contact" class="service-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+                    SERVICES SECTION END
+=========================================================== -->
+<!-- ==========================================================
+                WHY CHOOSE US SECTION START
+=========================================================== -->
+
+<section class="why-section py-5" id="why">
+
+    <div class="container-xxl">
+
+        <!-- =======================
+             SECTION HEADING
+        ======================== -->
+
+        <div class="why-heading text-center">
+
+            <span class="section-badge">
+                WHY CHOOSE US
+            </span>
+
+            <h2 class="mt-4">
+                Why Choose
+                <span>Classic Fumigation</span>
+            </h2>
+
+            <p>
+                We deliver eco-friendly, reliable, and professional pest control
+                solutions with certified experts, modern technology, and guaranteed
+                customer satisfaction.
+            </p>
+
+        </div>
+
+        <!-- =======================
+             FEATURES GRID
+        ======================== -->
+
+        <div class="why-grid">
+
+            <!-- Card 1 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    <i class="bi bi-tree-fill"></i>
+                </div>
+
+                <h4>Eco Friendly</h4>
+
+                <p>
+                    Safe and environmentally friendly pest control solutions for
+                    homes and businesses.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    <i class="bi bi-patch-check-fill"></i>
+                </div>
+
+                <h4>Certified Experts</h4>
+
+                <p>
+                    Experienced and trained professionals providing trusted pest
+                    management services.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    <i class="bi bi-cash-stack"></i>
+                </div>
+
+                <h4>Affordable Pricing</h4>
+
+                <p>
+                    Premium quality services at competitive and budget-friendly
+                    prices without compromise.
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+
+                <h4>Fast Response</h4>
+
+                <p>
+                    Quick inspection and rapid pest control solutions whenever
+                    you need us.
+                </p>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    <i class="bi bi-headset"></i>
+                </div>
+
+                <h4>24/7 Support</h4>
+
+                <p>
+                    Our customer support team is available around the clock to
+                    assist you anytime.
+                </p>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    <i class="bi bi-shield-fill-check"></i>
+                </div>
+
+                <h4>Service Warranty</h4>
+
+                <p>
+                    We stand behind our work with reliable service warranties
+                    for complete peace of mind.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+                WHY CHOOSE US SECTION END
+=========================================================== -->
+
+<!-- ==========================================================
+                WORKING PROCESS SECTION START
+=========================================================== -->
+
+<section class="process-section py-5" id="process">
+
+    <div class="container-xxl">
+
+        <!-- =======================
+             SECTION HEADING
+        ======================== -->
+
+        <div class="process-heading text-center">
+
+            <span class="section-badge">
+                WORKING PROCESS
+            </span>
+
+            <h2 class="mt-4">
+                Our Simple &
+                <span>Effective Process</span>
+            </h2>
+
+            <p>
+                At <strong>Classic Fumigation</strong>, we follow a systematic,
+                safe and eco-friendly pest control process to ensure long-lasting
+                protection for your home and business.
+            </p>
+
+        </div>
+
+        <!-- =======================
+             TIMELINE
+        ======================== -->
+
+        <div class="process-timeline">
+
+            <!-- STEP 1 -->
+
+            <div class="timeline-item left">
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+
+                    <h4>Inspection</h4>
+
+                    <p>
+                        Our experts carefully inspect your property to identify
+                        pest activity, affected areas and possible entry points.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 2 -->
+
+            <div class="timeline-item right">
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-clipboard-check"></i>
+                    </div>
+
+                    <h4>Planning</h4>
+
+                    <p>
+                        We prepare a customized treatment plan based on the type
+                        of pest infestation and the property's requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 3 -->
+
+            <div class="timeline-item left">
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+
+                    <h4>Treatment</h4>
+
+                    <p>
+                        Safe and eco-friendly chemicals are applied using modern
+                        equipment to eliminate pests effectively.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 4 -->
+
+            <div class="timeline-item right">
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+
+                    <h4>Monitoring</h4>
+
+                    <p>
+                        Our team monitors the treated area and provides follow-up
+                        visits to ensure complete pest control.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 5 -->
+
+            <div class="timeline-item left">
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+
+                    <h4>Completion</h4>
+
+                    <p>
+                        Final inspection is performed and we ensure your property
+                        remains safe, hygienic and pest-free.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+                WORKING PROCESS SECTION END
+=========================================================== -->
+
+<!--==================================================
+            BEFORE & AFTER GALLERY START
+===================================================-->
+
+<section class="gallery-section py-5" id="gallery">
+
+    <div class="container-xxl">
+
+        <!--==============================
+                SECTION HEADING
+        ==============================-->
+
+        <div class="gallery-heading text-center">
+
+            <span class="section-badge">
+                BEFORE & AFTER
+            </span>
+
+            <h2>
+                Our Successful
+                <span>Projects</span>
+            </h2>
+
+            <p>
+                See the remarkable transformation achieved by
+                <strong>Classic Fumigation</strong>.
+                Our professional treatments eliminate pests effectively,
+                creating cleaner, healthier and safer environments.
+            </p>
+
+        </div>
+
+        <!--==============================
+                GALLERY GRID
+        ==============================-->
+
+        <div class="gallery-grid">
+
+            <!--==============================
+                    CARD 1
+            ==============================-->
+
+            <div class="gallery-card">
+
+                <div class="comparison-container">
+
+                    <!-- Before -->
+
+                    <div class="before-image">
+
+                        <img src="images/projects/cockroaches before.png"
+                             alt="Before Treatment">
+
+                        <span class="image-label before">
+                            BEFORE
+                        </span>
+
+                    </div>
+
+                    <!-- After -->
+
+                    <div class="after-image">
+
+                        <img src="images/projects/cockroaches after.png"
+                             alt="After Treatment">
+
+                        <span class="image-label after">
+                            AFTER
+                        </span>
+
+                    </div>
+
+                    <!-- Slider -->
+
+                    <input
+                        type="range"
+                        class="comparison-slider"
+                        min="0"
+                        max="100"
+                        value="50">
+
+                    <div class="slider-line"></div>
+
+                </div>
+
+                <div class="gallery-content">
+
+                    <h4>Cockroach Treatment</h4>
+
+                    <p>
+                        Professional cockroach extermination with
+                        long-lasting protection and eco-friendly treatment.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CARD 2
+            ==============================-->
+
+            <div class="gallery-card">
+
+                <div class="comparison-container">
+
+                    <div class="before-image">
+
+                        <img src="images/projects/termite before.png"
+                             alt="Before">
+
+                        <span class="image-label before">
+                            BEFORE
+                        </span>
+
+                    </div>
+
+                    <div class="after-image">
+
+                        <img src="images/projects/termite after.png"
+                             alt="After">
+
+                        <span class="image-label after">
+                            AFTER
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        class="comparison-slider"
+                        min="0"
+                        max="100"
+                        value="50">
+
+                    <div class="slider-line"></div>
+
+                </div>
+
+                <div class="gallery-content">
+
+                    <h4>Termite Control</h4>
+
+                    <p>
+                        Advanced termite protection for homes and
+                        commercial buildings with guaranteed results.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CARD 3
+            ==============================-->
+
+            <div class="gallery-card">
+
+                <div class="comparison-container">
+
+                    <div class="before-image">
+
+                        <img src="images/projects/water tank before.png"
+                             alt="Before">
+
+                        <span class="image-label before">
+                            BEFORE
+                        </span>
+
+                    </div>
+
+                    <div class="after-image">
+
+                        <img src="images/projects/water tank after.png"
+                             alt="After">
+
+                        <span class="image-label after">
+                            AFTER
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        class="comparison-slider"
+                        min="0"
+                        max="100"
+                        value="50">
+
+                    <div class="slider-line"></div>
+
+                </div>
+
+                <div class="gallery-content">
+
+                    <h4>Water Tank Cleaning</h4>
+
+                    <p>
+                        Hygienic deep cleaning service providing
+                        safe water storage and improved cleanliness.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CARD 4
+            ==============================-->
+
+            <div class="gallery-card">
+
+                <div class="comparison-container">
+
+                    <div class="before-image">
+
+                        <img src="images/projects/bedbug before.png"
+                             alt="Before">
+
+                        <span class="image-label before">
+                            BEFORE
+                        </span>
+
+                    </div>
+
+                    <div class="after-image">
+
+                        <img src="images/projects/bedbug after.png"
+                             alt="After">
+
+                        <span class="image-label after">
+                            AFTER
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        class="comparison-slider"
+                        min="0"
+                        max="100"
+                        value="50">
+
+                    <div class="slider-line"></div>
+
+                </div>
+
+                <div class="gallery-content">
+
+                    <h4>Bed Bug Treatment</h4>
+
+                    <p>
+                        Complete bed bug removal using modern,
+                        eco-friendly treatment methods.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CARD 5
+            ==============================-->
+
+            <div class="gallery-card">
+
+                <div class="comparison-container">
+
+                    <div class="before-image">
+
+                        <img src="images/projects/rodent before.png"
+                             alt="Before">
+
+                        <span class="image-label before">
+                            BEFORE
+                        </span>
+
+                    </div>
+
+                    <div class="after-image">
+
+                        <img src="images/projects/rodent after.png"
+                             alt="After">
+
+                        <span class="image-label after">
+                            AFTER
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        class="comparison-slider"
+                        min="0"
+                        max="100"
+                        value="50">
+
+                    <div class="slider-line"></div>
+
+                </div>
+
+                <div class="gallery-content">
+
+                    <h4>Rodent Control</h4>
+
+                    <p>
+                        Safe and reliable rodent control solutions
+                        for residential and commercial properties.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CARD 6
+            ==============================-->
+
+            <div class="gallery-card">
+
+                <div class="comparison-container">
+
+                    <div class="before-image">
+
+                        <img src="images/projects/waterproofing before.png"
+                             alt="Before">
+
+                        <span class="image-label before">
+                            BEFORE
+                        </span>
+
+                    </div>
+
+                    <div class="after-image">
+
+                        <img src="images/projects/waterproofing after.png"
+                             alt="After">
+
+                        <span class="image-label after">
+                            AFTER
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        class="comparison-slider"
+                        min="0"
+                        max="100"
+                        value="50">
+
+                    <div class="slider-line"></div>
+
+                </div>
+
+                <div class="gallery-content">
+
+                    <h4>Waterproofing</h4>
+
+                    <p>
+                        Professional waterproofing solutions
+                        protecting buildings from leakage and damage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+            BEFORE & AFTER GALLERY END
+===================================================-->
+
+<!--==================================================
+                TESTIMONIAL SECTION START
+===================================================-->
+
+<section class="testimonial-section py-5" id="testimonials">
+
+    <div class="container-xxl">
+
+        <!--==============================
+                SECTION HEADING
+        ==============================-->
+
+        <div class="testimonial-heading text-center">
+
+            <span class="section-badge">
+                TESTIMONIALS
+            </span>
+
+            <h2>
+                What Our
+                <span>Clients Say</span>
+            </h2>
+
+            <p>
+                We take pride in delivering reliable, eco-friendly and
+                professional pest control services. Here's what our happy
+                customers have to say about their experience with
+                <strong>Classic Fumigation</strong>.
+            </p>
+
+        </div>
+
+        <!--==============================
+                TESTIMONIAL SLIDER
+        ==============================-->
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial-track">
+
+                <!-- CARD 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Home Owner.jpg" alt="Ahmed Khan">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Excellent pest control service. The team was
+                        professional, punctual and completely removed
+                        the termite problem from our home.
+                    </p>
+                    <h4>Ahmed Khan</h4>
+                    <span>Home Owner</span>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Fatima Ali.jpg" alt="Fatima Ali">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Their eco-friendly treatment was highly effective.
+                        We noticed outstanding results within just a few days.
+                    </p>
+                    <h4>Fatima Ali</h4>
+                    <span>Business Owner</span>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Usman Sheikh.jpg" alt="Usman Sheikh">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Very responsive team with affordable pricing.
+                        I highly recommend Classic Fumigation to everyone.
+                    </p>
+                    <h4>Usman Sheikh</h4>
+                    <span>Restaurant Manager</span>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Ayesha Noor.jpg" alt="Ayesha Noor">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Friendly staff and professional service.
+                        The mosquito treatment worked perfectly for our garden.
+                    </p>
+                    <h4>Ayesha Noor</h4>
+                    <span>Villa Owner</span>
+                </div>
+
+                <!-- DUPLICATE FOR INFINITE LOOP -->
+                <!-- CARD 1 DUP -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Home Owner.jpg" alt="Ahmed Khan">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Excellent pest control service. The team was
+                        professional, punctual and completely removed
+                        the termite problem from our home.
+                    </p>
+                    <h4>Ahmed Khan</h4>
+                    <span>Home Owner</span>
+                </div>
+
+                <!-- CARD 2 DUP -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Fatima Ali.jpg" alt="Fatima Ali">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Their eco-friendly treatment was highly effective.
+                        We noticed outstanding results within just a few days.
+                    </p>
+                    <h4>Fatima Ali</h4>
+                    <span>Business Owner</span>
+                </div>
+
+                <!-- CARD 3 DUP -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Usman Sheikh.jpg" alt="Usman Sheikh">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Very responsive team with affordable pricing.
+                        I highly recommend Classic Fumigation to everyone.
+                    </p>
+                    <h4>Usman Sheikh</h4>
+                    <span>Restaurant Manager</span>
+                </div>
+
+                <!-- CARD 4 DUP -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="testimonial-image">
+                        <img src="images/testimonal/Ayesha Noor.jpg" alt="Ayesha Noor">
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        Friendly staff and professional service.
+                        The mosquito treatment worked perfectly for our garden.
+                    </p>
+                    <h4>Ayesha Noor</h4>
+                    <span>Villa Owner</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                TESTIMONIAL SECTION END
+===================================================-->
+
+<!--==================================================
+                CONTACT SECTION START
+===================================================-->
+
+<section class="contact-section" id="contact">
+
+    <div class="container-xxl">
+
+        <!--==============================
+                SECTION HEADING
+        ==============================-->
+
+        <div class="contact-heading text-center">
+
+            <span class="section-badge">
+                CONTACT US
+            </span>
+
+            <h2>
+                Get In
+                <span>Touch</span>
+            </h2>
+
+            <p>
+                Need professional pest control services? Contact
+                <strong>Classic Fumigation</strong> today for fast,
+                reliable and eco-friendly solutions. We're available
+                24/7 to assist you.
+            </p>
+
+        </div>
+
+        <!--==============================
+                CONTACT ROW
+        ==============================-->
+
+        <div class="row g-5 align-items-center">
+
+            <!--==============================
+                    CONTACT INFO
+            ==============================-->
+
+            <div class="col-lg-5">
+
+                <div class="contact-info-card">
+
+                    <h3>Contact Information</h3>
+
+                    <p>
+                        Reach out to us anytime. Our expert team is always
+                        ready to provide quick and professional assistance.
+                    </p>
+
+                    <!-- Phone -->
+
+                    <div class="info-box">
+
+                        <div class="info-icon">
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>Phone</h5>
+
+                            <a href="tel:+923152934276">
+                                +92 315 2934276
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- WhatsApp -->
+
+                    <div class="info-box">
+
+                        <div class="info-icon">
+
+                            <i class="bi bi-whatsapp"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>WhatsApp</h5>
+
+                            <a href="https://wa.me/923152934276" target="_blank">
+                                +92 315 2934276
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="info-box">
+
+                        <div class="info-icon">
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>Email</h5>
+
+                            <a href="mailto:info@classicfumigation.com">
+                                info@classicfumigation.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Address -->
+
+                    <div class="info-box">
+
+                        <div class="info-icon">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>Address</h5>
+
+                            <p>Karachi, Pakistan</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Hours -->
+
+                    <div class="info-box">
+
+                        <div class="info-icon">
+
+                            <i class="bi bi-clock-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>Working Hours</h5>
+
+                            <p>Mon - Sun | 24/7 Available</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CONTACT FORM
+            ==============================-->
+
+            <div class="col-lg-7">
+
+                <div class="contact-form-card">
+
+                    <h3>Send Us a Message</h3>
+
+                    <form id="contactForm">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Full Name"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Email Address"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Phone Number"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <select
+                                    class="form-select"
+                                    id="service"
+                                    required>
+
+                                    <option value="">
+                                        Select Service
+                                    </option>
+
+                                    <option>
+                                        Cockroach Control
+                                    </option>
+
+                                    <option>
+                                        Termite Control
+                                    </option>
+
+                                    <option>
+                                        Bed Bug Control
+                                    </option>
+
+                                    <option>
+                                        Mosquito Control
+                                    </option>
+
+                                    <option>
+                                        Rodent Control
+                                    </option>
+
+                                    <option>
+                                        Snake Control
+                                    </option>
+
+                                    <option>
+                                        Lizard Control
+                                    </option>
+
+                                    <option>
+                                        Tank Cleaning
+                                    </option>
+
+                                    <option>
+                                        Waterproofing
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-12 mb-4">
+
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="6"
+                                    placeholder="Write Your Message..."
+                                    required></textarea>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="contact-btn">
+
+                                    <i class="bi bi-send-fill"></i>
+
+                                    Send Message
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <!-- Success Message -->
+
+                    <div
+                        class="form-success mt-4"
+                        id="formSuccess">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Your message has been sent successfully!
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                CONTACT SECTION END
+===================================================-->
+
+<!--==================================================
+                FOOTER SECTION START
+===================================================-->
+
+<footer class="footer-section" id="footer">
+
+    <div class="container-xxl">
+
+        <div class="row gy-5">
+
+            <!--====================================
+                    COMPANY INFO
+            =====================================-->
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+
+                <div class="footer-widget">
+
+                    <!-- Logo -->
+
+                    <a href="#home" class="footer-logo">
+
+                        <img src="images/logo/Logo.png"
+                             alt="Classic Fumigation Logo">
+
+                    </a>
+
+                    <h3>Classic Fumigation</h3>
+
+                    <p class="footer-text">
+
+                        We provide eco-friendly, reliable and professional
+                        pest control solutions for homes, offices,
+                        commercial buildings and industries across Pakistan.
+
+                    </p>
+
+                    <!-- Contact Info -->
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                            Karachi, Pakistan
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                            <a href="tel:+923152934276">
+
+                                +92 315 2934276
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                            <a href="mailto:info@classicfumigation.com">
+
+                                info@classicfumigation.com
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-clock-fill"></i>
+
+                            Mon - Sun (24/7 Available)
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!--====================================
+                    QUICK LINKS
+            =====================================-->
+
+            <div class="col-xl-2 col-lg-2 col-md-6">
+
+                <div class="footer-widget">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#about">About</a></li>
+
+                        <li><a href="#services">Services</a></li>
+
+                        <li><a href="#why">Why Choose Us</a></li>
+
+                        <li><a href="#gallery">Gallery</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!--====================================
+                    SERVICES
+            =====================================-->
+
+            <div class="col-xl-3 col-lg-3 col-md-6">
+
+                <div class="footer-widget">
+
+                    <h4>Our Services</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#services">Cockroach Control</a></li>
+
+                        <li><a href="#services">Termite Control</a></li>
+
+                        <li><a href="#services">Bed Bug Control</a></li>
+
+                        <li><a href="#services">Mosquito Control</a></li>
+
+                        <li><a href="#services">Rodent Control</a></li>
+
+                        <li><a href="#services">Tank Cleaning</a></li>
+
+                        <li><a href="#services">Waterproofing</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!--====================================
+                    NEWSLETTER
+            =====================================-->
+
+            <div class="col-xl-3 col-lg-3 col-md-6">
+
+                <div class="footer-widget">
+
+                    <h4>Newsletter</h4>
+
+                    <p>
+
+                        Subscribe to receive pest control tips,
+                        offers and company updates.
+
+                    </p>
+
+                    <form class="newsletter-form">
+
+                        <input type="email" class="form-control mb-3 shadow-none" placeholder="Enter Email Address" required>
+
+                        <button
+                            type="submit"
+                            class="newsletter-btn">
+
+                            Subscribe
+
+                        </button>
+
+                    </form>
+
+                    <!-- Social Icons -->
+
+                    <div class="footer-social">
+
+                        <a href="https://www.facebook.com/profile.php?id=61584320699454" target="_blank" aria-label="Facebook">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/classic_fumigation" target="_blank" aria-label="Instagram">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="https://wa.me/923152934276" target="_blank" aria-label="WhatsApp">
+
+                            <i class="bi bi-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--====================================
+                FOOTER BOTTOM
+        =====================================-->
+
+        <div class="footer-bottom">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <p>
+
+                        © 2026 <strong>Classic Fumigation</strong>.
+                        All Rights Reserved.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="footer-bottom-links">
+
+                        <a href="#contact">Privacy Policy</a>
+
+                        <a href="#contact">Terms & Conditions</a>
+
+                        <a href="#contact">Sitemap</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!--==================================================
+                FOOTER SECTION END
+===================================================-->
+
+    <!--==================================================
+            FLOATING ACTION BUTTONS & BACK TO TOP
+    ===================================================-->
+
+    <a href="https://wa.me/923152934276"
+       class="floating-whatsapp"
+       target="_blank"
+       aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <a href="tel:+923152934276"
+       class="floating-call"
+       aria-label="Call Now">
+        <i class="bi bi-telephone-fill"></i>
+    </a>
+
+    <button class="back-to-top"
+            id="backToTop"
+            aria-label="Back To Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
