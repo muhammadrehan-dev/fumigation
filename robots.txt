@@ -1,0 +1,6 @@
+# Classic Fumigation Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://classicfumigation.com/sitemap.xml
